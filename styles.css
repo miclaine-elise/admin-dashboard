@@ -141,7 +141,7 @@ body {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -219,6 +219,7 @@ body {
 
 .announcement {
     padding: 1rem;
+
 }
 
 .announcement span {
@@ -237,14 +238,40 @@ body {
 #trending-container {
     grid-column: 2/3;
     grid-row: 2/3;
-
 }
 
 #trends {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     background-color: rgb(247, 241, 229);
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
 
+.trend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+
+}
+
+.trend div span {
+    grid-area: 1/ 2/ 2/ 3;
+}
+
+.trend div p {
+    grid-area: 1/ 2/ 2/ 3;
+    color: gray;
+    font-size: 0.8rem;
+    padding-top: 0.25rem;
+}
+
+.trend img {
+    height: 2.5rem;
+    width: auto;
+    grid-area: 1 / 1/ 2/ 2;
 }
 
 #trends,
