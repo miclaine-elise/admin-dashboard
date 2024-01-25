@@ -1,14 +1,31 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
+    font-family: sans-serif;
 }
 
 #sidebar {
-    background-color: rgb(137, 129, 33);
+    background-color: rgb(76, 75, 22);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    color: rgb(247, 241, 229);
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#sidebar span {
+    font-size: 2.5rem;
+}
+
+#sidebar ul {
+    display: grid;
+    grid-auto-rows: 2rem;
+    gap: 1rem;
 }
 
 #header {
@@ -18,14 +35,99 @@ body {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr 3fr;
+    box-shadow: 2px 3px 3px black;
+    position: relative;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-content: center;
+    gap: 1rem;
+}
+
+#search img {
+    height: 1.5rem;
+}
+
+#search input {
+    border-radius: 1rem;
+    border-color: black;
+    border-style: solid;
+    background-color: rgb(247, 241, 229);
+    padding: 0.25rem
+}
+
+#user-btns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 800;
+    gap: 1rem;
+}
+
+#icon {
+    height: 2.5rem;
+}
+
+#introduction #icon {
+    height: 3.5rem;
+}
+
+#introduction {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+#introduction span {
+    display: grid;
+    grid-template-rows: auto auto;
+    font-weight: 700;
+}
+
+#introduction div span:last-child {
+    font-size: 1.5rem;
+}
+
+#content-btns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#content-btns button {
+    background-color: rgb(76, 75, 22);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    border: none;
+    width: 6rem;
+}
+
+#bell {
+    height: 2rem;
 }
 
 #main-content {
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: rgb(76, 75, 22);
+    background-color: rgb(137, 129, 33);
     display: grid;
-    grid-template: 1fr 1fr / 4fr 1fr;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    color: rgb(247, 241, 229);
+    padding: 2rem;
+    font-size: 1.5rem;
+    gap: 2rem;
 }
 
 #project-container {
@@ -35,14 +137,46 @@ body {
 
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .project-card {
     height: 200px;
-    background-color: rgb(247, 241, 229);
+    display: grid;
+    grid-template-columns: 1rem auto;
+    grid-template-rows: auto, 1fr, auto;
+    background-color: rgb(231, 177, 10);
 
+}
+
+.project-card span {
+    grid-area: 1/2/2/3;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-color: rgb(247, 241, 229);
+}
+
+.project-card p {
+    background-color: rgb(247, 241, 229);
+    color: gray;
+}
+
+#card-actions {
+    background-color: rgb(247, 241, 229);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+#card-actions img {
+    height: 1rem;
+}
+
+#card-color {
+    grid-area: 1 / 1 /4/ 2;
 }
 
 #announcement-container {
@@ -53,16 +187,18 @@ body {
 #announcements {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 15px;
+
 }
 
 .announcement {
     background-color: rgb(247, 241, 229);
+
 }
 
 #trending-container {
     grid-column: 2/3;
     grid-row: 2/3;
+
 }
 
 #trends {
@@ -70,4 +206,13 @@ body {
     grid-template-rows: 1fr;
     background-color: rgb(247, 241, 229);
 
+}
+
+#trends,
+#announcements,
+.project-card {
+    border-radius: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    box-shadow: 2px 3px 3px black;
 }

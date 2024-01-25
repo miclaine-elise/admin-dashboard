@@ -6,22 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div id="header">
         <div id="search">
+            <img src="magnify.svg">
             <input type="text">
         </div>
         <div id="user-btns">
-            <div id="bell"></div>
-            <div id="icon"></div>
+            <img id="bell" src="bell-outline.svg">
+            <img id="icon" src="user-icon.png">
             <div id="user-name">Morgan Oakley</div>
         </div>
         <div id="introduction">
-            <div id="icon"></div>
-            <span>Hi there, Morgan Oakley (@morgan)</span>
+            <img id="icon" src="user-icon.png">
+            <div>
+                <span>Hi there,</span>
+                <span>Morgan Oakley (@morgan)</span>
+            </div>
+
         </div>
         <div id="content-btns">
             <button>New</button>
@@ -38,6 +44,8 @@
             <li>History</li>
             <li>Tasks</li>
             <li>Communities</li>
+        </ul>
+        <ul>
             <li>Settings</li>
             <li>Support</li>
             <li>Privacy</li>
@@ -45,14 +53,88 @@
     </div>
     <div id="main-content">
         <div id="project-container">
-            <span>Projects</span>
+            <span>Your Projects</span>
             <div id="projects">
-                <div class="project-card">Project</div>
-                <div class="project-card">Project</div>
-                <div class="project-card">Project</div>
-                <div class="project-card">Project</div>
-                <div class="project-card">Project</div>
-                <div class="project-card">Project</div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+                    <span>First Project</span>
+                    <p>Morbi tincidunt ornare massa eget egestas purus viverra. Duis ultricies lacus sed turpis
+                        tincidunt id aliquet risus. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus.
+                        Convallis posuere morbi leo urna. </p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+
+                    <span>Here's a Project</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Sit amet facilisis magna etiam tempor orci. Amet tellus cras
+                        adipiscing enim eu turpis. In vitae turpis massa sed elementum tempus egestas.</p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+
+                    <span>Another Project</span>
+                    <p>Ipsum faucibus vitae aliquet nec ullamcorper sit. Orci phasellus egestas tellus rutrum tellus
+                        pellentesque eu tincidunt tortor. Lorem donec massa sapien faucibus et molestie ac. Cras semper
+                        auctor neque vitae tempus quam pellentesque nec.</p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+
+                    <span>We Love Projects</span>
+                    <p>Euismod in pellentesque massa placerat duis ultricies lacus sed. Risus pretium quam vulputate
+                        dignissim suspendisse in est ante in. Egestas dui id ornare arcu odio ut sem. Vestibulum mattis
+                        ullamcorper velit sed ullamcorper morbi tincidunt ornare. Eget est lorem ipsum dolor sit amet
+                        consectetur.</p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+
+                    <span>Cool Project Dude</span>
+                    <p>Mauris augue neque gravida in fermentum et sollicitudin. Nunc eget lorem dolor sed viverra ipsum
+                        nunc. Porttitor massa id neque aliquam vestibulum morbi. Metus dictum at tempor commodo
+                        ullamcorper. Fermentum iaculis eu non diam. Velit euismod in pellentesque massa.
+
+                    </p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div id="card-color"></div>
+
+                    <span>Last Project</span>
+                    <p>Lorem mollis aliquam ut porttitor leo a. Eu tincidunt tortor aliquam nulla. Sed id semper risus
+                        in hendrerit. Posuere lorem ipsum dolor sit. Ornare arcu odio ut sem. Dictum fusce ut placerat
+                        orci nulla. </p>
+                    <div id="card-actions">
+                        <img src="heart-outline.svg">
+                        <img src="eye-plus-outline.svg">
+                        <img src="share-variant-outline.svg">
+                    </div>
+                </div>
             </div>
         </div>
         <div id="announcement-container">
