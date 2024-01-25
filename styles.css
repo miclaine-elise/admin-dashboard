@@ -101,6 +101,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
 }
 
 #content-btns button {
@@ -112,6 +113,8 @@ body {
     padding: 0.5rem;
     border: none;
     width: 6rem;
+    box-shadow: 2px 3px 3px black;
+
 }
 
 #bell {
@@ -135,31 +138,43 @@ body {
     grid-row: 1/3;
 }
 
+
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    margin-top: 1rem;
 }
 
 .project-card {
-    height: 200px;
+    height: 250px;
     display: grid;
-    grid-template-columns: 1rem auto;
-    grid-template-rows: auto, 1fr, auto;
-    background-color: rgb(231, 177, 10);
+    grid-template-columns: 1rem 1fr auto;
+    grid-template-rows: 3rem 1fr 2rem;
+    background-color: rgb(247, 241, 229);
+}
 
+#card-color {
+    grid-area: 1/1/4/2;
+    background-color: rgb(127, 204, 255);
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .project-card span {
-    grid-area: 1/2/2/3;
+    grid-area: 1/2/2/4;
     font-size: 1.25rem;
     font-weight: 700;
     background-color: rgb(247, 241, 229);
+    border-radius: 0 0.5rem 0 0;
+    padding: 0.5rem;
+    align-self: end;
 }
 
 .project-card p {
     background-color: rgb(247, 241, 229);
     color: gray;
+    margin: 0.5rem;
+    grid-area: 2/2/3/4;
 }
 
 #card-actions {
@@ -169,10 +184,14 @@ body {
     justify-content: end;
     align-content: center;
     gap: 0.5rem;
+    grid-area: 3/3/4/4;
+    margin: 0.5rem;
+
 }
 
 #card-actions img {
     height: 1rem;
+    color: red;
 }
 
 #card-color {
@@ -187,11 +206,31 @@ body {
 #announcements {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(247, 241, 229);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#announcements div:nth-child(2) {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 
 }
 
 .announcement {
-    background-color: rgb(247, 241, 229);
+    padding: 1rem;
+}
+
+.announcement span {
+    font-weight: 700;
+    font-size: 0.9rem;
+
+}
+
+.announcement p {
+    color: gray;
+    font-size: 0.75rem;
+    padding-top: 0.25rem;
 
 }
 
